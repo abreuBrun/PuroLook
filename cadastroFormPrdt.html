@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Cadastro de Produtos</title>
+        <!-- ícone da guia -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="bg-dark">
+
+        <div class="container-sm">
+    
+            <!-- Outer Row -->
+            <div class="row justify-content-center">
+    
+                <div class="col-xl-10 col-lg-12 col-md-9">
+    
+                    <div class="card o-hidden border-0 shadow-lg my-5">
+                        <div class="card-body p-0">
+                            <!-- Nested Row within Card Body -->
+                            <div class="row">
+                                    <div class="p-5 text-center">
+                                        <div class="text-center">
+                                            <h1 class="h4 text-gray-900 mb-4">Cadastrar produtos</h1>
+                                        </div>
+                                        <form>
+                                            <!-- Nome do produto --><div class="">
+                                                <input type="text" class="mb-2" name="produtoNome" placeholder="Produto">
+                                            </div>
+                                            <!-- Preço --><div class="">
+                                                <input type="double" class="mb-2" name="produtoPreco" placeholder="Preço">
+                                            </div>
+                                            <!-- Categoria --><div class="">
+                                            <label for="catg" class="mb-2 fs-catg">Categoria:</label>
+                                                <select id="catg" name="catg">
+                                                    <option value="blusas">Blusas</option>
+                                                    <option value="calcas">Calças</option>
+                                                    <option value="calcados">Calçados</option>
+                                                    <option value="infantil">Infantil</option>
+                                                    <option value="acessorios">Acessórios</option>
+                                                    <option value="vestidos">Vestidos</option>
+                                                    <option value="jeans">Jeans</option>
+                                                    <option value="roupaFrio">Roupa de frio</option>
+                                                    <option value="intimasFem">Íntimas Fem.</option>
+                                                    <option value="intimasMasc">Íntimas Masc.</option>
+                                                    </select>
+                                                    </div>
+                                            <!-- Tamanho --><div class="">
+                                            <label for="tamanho" class="fs-catg">Tamanho:</label>
+                                            <select id="tamanho" name="tamanho">
+                                                <option value="sizeP">P</option>
+                                                <option value="sizeM">M</option>
+                                                <option value="sizeG">G</option>
+                                                <option value="sizeGG">GG</option>
+                                                <option value="sizePlus">Plus Size</option>
+                                                </select>
+                                                </div>
+                                            <!-- Imagem --><div class="">
+                                                <label class="fs-catg btn btn-link text-black" for="imagemPrdt">Selecione uma imagem</label>
+                                                <input class="fs-ladaimg" type="file" id="imagemPrdt" name="imagemPrdt" hidden>
+                                                
+                                                <!-- Aqui vai aparecer o nome do arquivo -->
+                                                <div id="nomeArquivo" class="text-muted mb-3"></div>
+                                                
+                                                <script>
+                                                  const inputFile = document.getElementById('imagemPrdt');
+                                                  const nomeArquivo = document.getElementById('nomeArquivo');
+                                                
+                                                  inputFile.addEventListener('change', function() {
+                                                    if (this.files && this.files.length > 0) {
+                                                      nomeArquivo.textContent = this.files[0].name; // mostra só o nome
+                                                    } else {
+                                                      nomeArquivo.textContent = ''; // limpa se nada foi selecionado
+                                                    }
+                                                  });
+                                                </script>
+                                                
+                                            </div>
+                                            <!-- Botão salvar -->
+                                            <button class="btn btn-outline-dark" type="submit"> Salvar </button>
+                                        </form>
+                                        <hr>
+                                        <div class="text-center">
+                                            <a class="btn btn-outline-dark" href="index.html">Página Inicial</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <script src="js/loginUser.js"></script>
+    
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+    
+    </body>
