@@ -1,0 +1,100 @@
+/* ======== PÁGINAS DE LOGIN & CADASTRO ======== */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7fb;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.auth-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #d46be4;
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #b65bcc;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid #eee;
+    border-radius: 0;
+    padding-left: 0;
+    background: transparent;
+}
+
+.form-control:focus {
+    background: transparent;
+    border-bottom: 2px solid #d46be4;
+    box-shadow: none;
+}
+
+.btn-auth {
+    background: linear-gradient(90deg, #e973ff, #d46be4);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn-auth:hover {
+    opacity: 0.9;
+}
+
+.auth-link {
+    color: #d46be4;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+.social-box {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.social-btn img {
+    width: 20px;
+}
+
+.checkbox-text {
+    font-size: 0.85rem;
+    color: #777;
+}
