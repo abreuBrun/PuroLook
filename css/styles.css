@@ -45,6 +45,17 @@
     object-position: center; 
   }
 }
+
+/*====== Remove hover apenas dos cards com a classe no-hover ======*/
+.no-hover:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.no-hover img:hover {
+    transform: none !important;
+}
+
 /*====== daq pra cima foi tudo IA =======*/
 
 :root {
