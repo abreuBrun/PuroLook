@@ -10894,8 +10894,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+/* ======== IA ta dominando o código, jaja é o mundo ========= */
+/* ======== ESTILOS GERAIS ======== */
 }
- /* ======== ESTILOS GERAIS ======== */
  body {
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
@@ -10965,4 +10967,229 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
   color: #bbb;
+}
+
+/* ======== MODO ESCURO ======== */
+
+.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #f1f1f1 !important;
+}
+
+/* Ajusta cards */
+.dark-mode .card,
+.dark-mode .auth-card {
+    background: #2a2a2a !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+/* Inputs modo escuro */
+.dark-mode .form-control {
+    background: #333 !important;
+    color: #fff !important;
+    border-bottom: 2px solid #bbb !important;
+}
+
+.dark-mode .form-control:focus {
+    border-bottom: 2px solid #d46be4 !important;
+}
+
+/* Links */
+.dark-mode a {
+    color: #d46be4 !important;
+}
+
+/* Botões */
+.dark-mode .btn-auth {
+    background: linear-gradient(90deg, #b94ad3, #923aaa) !important;
+}
+/* ======== MODO ESCURO - CORES DE TEXTO ======== */
+
+/* transição suave */
+body {
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+/* cores base */
+.dark-mode,
+.dark-mode body,
+.dark-mode section,
+.dark-mode header {
+  color: #e9e9ee !important; /* cor principal do texto */
+  background-color: #111218 !important;
+}
+
+/* cabeçalhos e textos fortes */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode .h1, .dark-mode .h2, .dark-mode .h3,
+.dark-mode .h4, .dark-mode .h5, .dark-mode .h6 {
+  color: #ffffff !important;
+}
+
+/* parágrafos, pequenas descrições, labels */
+.dark-mode p,
+.dark-mode small,
+.dark-mode .form-text,
+.dark-mode label,
+.dark-mode .checkbox-text,
+.dark-mode .fs-catg,
+.dark-mode .fs-ladaimg {
+  color: #d6d6db !important;
+}
+
+/* links */
+.dark-mode a,
+.dark-mode .auth-link,
+.dark-mode .nav-link {
+  color: #e4a8ff !important; /* versão clara do lilás */
+}
+.dark-mode a:hover {
+  color: #ffbef7 !important;
+}
+
+/* cards / containers */
+.dark-mode .card,
+.dark-mode .auth-card,
+.dark-mode .card-body {
+  background: #17171b !important;
+  color: #e9e9ee !important;
+  border-color: rgba(255,255,255,0.03) !important;
+}
+
+/* bordas / linhas */
+.dark-mode .form-control,
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+  background: #16161a !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+/* foco nos inputs (mantém o lilás) */
+.dark-mode .form-control:focus,
+.dark-mode input:focus,
+.dark-mode select:focus,
+.dark-mode textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(212,107,228,0.12) !important;
+  border-color: #d46be4 !important;
+}
+
+/* placeholder (texto cinza claro) */
+.dark-mode ::-webkit-input-placeholder { color: #9a9aa0 !important; }
+.dark-mode :-ms-input-placeholder { color: #9a9aa0 !important; }
+.dark-mode ::placeholder { color: #9a9aa0 !important; }
+
+/* botões padrão (se necessário) */
+.dark-mode .btn,
+.dark-mode .btn-outline-dark {
+  color: #fff !important;
+  border-color: rgba(255,255,255,0.06) !important;
+  background: transparent !important;
+}
+
+/* botões customizados (ex: btn-auth) */
+.dark-mode .btn-auth {
+  color: #fff !important;
+  background: linear-gradient(90deg, #b94ad3, #923aaa) !important;
+}
+
+/* ícones do Bootstrap */
+.dark-mode .bi {
+  color: #e9e9ee !important;
+}
+
+/* tabelas */
+.dark-mode table,
+.dark-mode thead,
+.dark-mode tbody,
+.dark-mode tr,
+.dark-mode td,
+.dark-mode th {
+  color: #eaeaea !important;
+  border-color: rgba(255,255,255,0.04) !important;
+}
+
+/* listas, dropdowns e selects */
+.dark-mode .dropdown-menu,
+.dark-mode .form-select,
+.dark-mode option {
+  background: #151518 !important;
+  color: #eaeaea !important;
+}
+
+/* garantir que imagens com fundo branco não fiquem com bordas estranhas */
+.dark-mode img {
+  filter: none;
+}
+
+/* regra de fallback pra sobrescrever qualquer seleção global */
+.dark-mode * {
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+/* Se algo ainda aparecer com cor errada, você pode aplicar essa regra pontual:
+.dark-mode .seletor-problema { color: #e9e9ee !important; }
+*/
+
+/* =============================================
+   MODO ESCURO - NAVBAR COMPLETA (para sua navbar)
+   ============================================= */
+
+.dark-mode nav.navbar {
+    background-color: #1a1b20 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+/* Links da navbar */
+.dark-mode .navbar .nav-link {
+    color: #e9e9ee !important;
+}
+
+.dark-mode .navbar .nav-link:hover,
+.dark-mode .navbar .nav-link:focus {
+    color: #d46be4 !important;
+}
+
+/* Ícones */
+.dark-mode .navbar .bi {
+    color: #f1f1f1 !important;
+}
+
+/* Botão de alternância (Modo escuro) */
+.dark-mode #darkToggle {
+    color: #ffffff !important;
+    background-color: #292a31 !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+/* Dropdown */
+.dark-mode .dropdown-menu {
+    background-color: #1a1b20 !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.dark-mode .dropdown-item {
+    color: #e9e9ee !important;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #292a31 !important;
+    color: #d46be4 !important;
+}
+
+/* Hamburguer menu (navbar-toggler) */
+.dark-mode .navbar-toggler {
+    background-color: #292a31 !important;
+    border-color: rgba(255,255,255,0.2) !important;
+}
+
+.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
 }

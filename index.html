@@ -27,7 +27,17 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
           <li class="nav-item"><a class="nav-link" href="userLoginForm.html"><i class="bi bi-person"></i> Entrar</a></li>
-          <li class="nav-item"><a class="nav-link" href="cadastroFormPrdt.html"><i class="bi bi-bag-plus"></i> Cadastrar Produtos</a></li> <!-- Só adm poderá ver essa opção -->
+
+          <li class="nav-item dropdown"><!-- aq é só pa adm -->
+            <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown"><i class="bi bi-person-lock"></i> ADMIN</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="cadastroFormPrdt.html"><i class="bi bi-bag-plus"></i> Cadastrar Produtos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"> Lista de Usuários</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item"><button id="darkToggle" class="btn btn-sm"><i class="bi bi-moon"></i> Modo Escuro</button></li>
           <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-info-square"></i> Sobre</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown"><i class="bi bi-chat-text"></i> Fale Conosco</a>
@@ -180,5 +190,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 
   </script>
+
+  <script>
+  const toggle = document.getElementById("darkToggle");
+  const body = document.body;
+
+  // Carrega preferência
+  if (localStorage.getItem("darkMode") === "enabled") {
+      body.classList.add("dark-mode");
+  }
+
+  toggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "enabled");
+      } else {
+          localStorage.removeItem("darkMode");
+      }
+  });
+</script>
+
 </body>
 </html>
